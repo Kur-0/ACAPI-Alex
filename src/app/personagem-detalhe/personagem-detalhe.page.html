@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaultHref="home">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ character?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-thumbnail>
+      <img alt="Silhouette of mountains" src={{character.image}} />
+    </ion-thumbnail>
+    <ion-card-header>
+      <ion-card-title>
+        {{ character.name }}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-item>
+      <ion-label>
+        Status: {{character.status}}<br>
+        Species: {{character.species}}
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
